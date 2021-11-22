@@ -9,9 +9,22 @@ public class Facture
 	 * @return le client.
 	 */
 	
+	private LocalDate date=LocalDate.now();
+	
+	private boolean reglementfac=false;
+	
+	private Client client;
+	
+	private int Montant;
+	
+	public Facture(int Montant)
+	{
+		this.Montant=Montant;
+	}
+	
 	public Client getClient()
 	{
-		return null;
+		return client;
 	}
 
 	/**
@@ -21,7 +34,7 @@ public class Facture
 	
 	public int getMontant()
 	{
-		return 0;
+		return Montant;
 	}
 
 	/**
@@ -31,7 +44,7 @@ public class Facture
 	
 	public boolean estReglee()
 	{
-		return true;
+		return reglementfac;
 	}
 
 	/**
@@ -41,7 +54,7 @@ public class Facture
 	
 	public LocalDate getDate()
 	{
-		return null;
+		return date;
 	}
 
 	/**
